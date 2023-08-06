@@ -1,0 +1,11 @@
+| Source                 | Description                                                 | Homepage              | License             |
+| ---------------------- | ----------------------------------------------------------- | --------------------- | ------------------- |
+| feodotracker           | https://feodotracker.abuse.ch/blocklist/                    | https://abuse.ch/     | cc0-1.0             |
+| snort2_community_rules | https://www.snort.org/downloads/#rule-downloads             | https://www.snort.org | all-rights-reserved |
+| snort3_community_rules | https://www.snort.org/downloads/#rule-downloads             | https://www.snort.org | all-rights-reserved |
+| sslbl_botnet           | https://sslbl.abuse.ch/blacklist/#botnet-c2-ips-suricata    | https://abuse.ch/     | cc0-1.0             |
+| sslbl_ja3_fingerprints | https://sslbl.abuse.ch/blacklist/#ja3-fingerprints-suricata | https://abuse.ch/     | cc0-1.0             |
+| sslbl_tls_cert         | https://sslbl.abuse.ch/blacklist/#ssl-certificates-suricata | https://abuse.ch/     | cc0-1.0             |
+| threatfox              | https://threatfox.abuse.ch/export/#suricata                 | https://abuse.ch/     | cc0-1.0             |
+| urlhaus_snort_ids      | https://urlhaus.abuse.ch/api/#ids                           | https://abuse.ch/     | cc0-1.0             |
+| urlhaus_suricata_ids   | https://urlhaus.abuse.ch/api/#ids                           | https://abuse.ch/     | cc0-1.0             |

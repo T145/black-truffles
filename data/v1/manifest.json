@@ -1,200 +1,200 @@
 {
-    "feodotracker": {
-        "archive": false,
-        "checksums": {},
-        "content": {
-            "filter": "NONE",
-            "retriever": "ARIA2",
-            "type": "TEXT"
-        },
-        "platforms": [
-            "SNORT2",
-            "SNORT3",
-            "SURICATA"
-        ],
-        "metadata": {
-            "description": "https://feodotracker.abuse.ch/blocklist/",
-            "homepage": "https://abuse.ch/",
-            "license": "cc0-1.0"
-        },
-        "mirrors": [
-            "https://feodotracker.abuse.ch/downloads/feodotracker.rules"
-        ],
-        "prefix": "FEODO"
+  "feodotracker": {
+    "archive": false,
+    "checksums": {},
+    "content": {
+      "filter": "NONE",
+      "retriever": "ARIA2",
+      "type": "TEXT"
     },
-    "snort2_community_rules": {
-        "archive": false,
-        "checksums": {
-            "md5": "https://www.snort.org/downloads/community/md5s"
-        },
-        "content": {
-            "filter": "GZIP",
-            "retriever": "ARIA2",
-            "type": "TARBALL"
-        },
-        "platforms": [
-            "SNORT2"
-        ],
-        "metadata": {
-            "description": "https://www.snort.org/downloads/#rule-downloads",
-            "homepage": "https://www.snort.org",
-            "license": "all-rights-reserved"
-        },
-        "mirrors": [
-            "https://www.snort.org/downloads/community/community-rules.tar.gz"
-        ],
-        "prefix": "SNORT-CR"
+    "metadata": {
+      "description": "https://feodotracker.abuse.ch/blocklist/",
+      "homepage": "https://abuse.ch/",
+      "license": "cc0-1.0"
     },
-    "snort3_community_rules": {
-        "archive": false,
-        "checksums": {
-            "md5": "https://www.snort.org/downloads/community/md5s"
-        },
-        "content": {
-            "filter": "GZIP",
-            "retriever": "ARIA2",
-            "type": "TARBALL"
-        },
-        "platforms": [
-            "SNORT3"
-        ],
-        "metadata": {
-            "description": "https://www.snort.org/downloads/#rule-downloads",
-            "homepage": "https://www.snort.org",
-            "license": "all-rights-reserved"
-        },
-        "mirrors": [
-            "https://www.snort.org/downloads/community/snort3-community-rules.tar.gz"
-        ],
-        "prefix": "SNORT-CR"
+    "mirrors": [
+      "https://feodotracker.abuse.ch/downloads/feodotracker.rules"
+    ],
+    "platforms": [
+      "SNORT2",
+      "SNORT3",
+      "SURICATA"
+    ],
+    "prefix": "FEODO"
+  },
+  "snort2_community_rules": {
+    "archive": false,
+    "checksums": {
+      "md5": "https://www.snort.org/downloads/community/md5s"
     },
-    "sslbl_tls_cert": {
-        "archive": false,
-        "checksums": {},
-        "content": {
-            "filter": "NONE",
-            "retriever": "ARIA2",
-            "type": "TEXT"
-        },
-        "platforms": [
-            "SURICATA"
-        ],
-        "metadata": {
-            "description": "https://sslbl.abuse.ch/blacklist/#ssl-certificates-suricata",
-            "homepage": "https://abuse.ch/",
-            "license": "cc0-1.0"
-        },
-        "mirrors": [
-            "https://sslbl.abuse.ch/blacklist/sslblacklist_tls_cert.rules"
-        ],
-        "prefix": "SSLBL"
+    "content": {
+      "filter": "GZIP",
+      "retriever": "ARIA2",
+      "type": "TARBALL"
     },
-    "sslbl_botnet": {
-        "archive": false,
-        "checksums": {},
-        "content": {
-            "filter": "NONE",
-            "retriever": "ARIA2",
-            "type": "TEXT"
-        },
-        "platforms": [
-            "SNORT2",
-            "SNORT3",
-            "SURICATA"
-        ],
-        "metadata": {
-            "description": "https://sslbl.abuse.ch/blacklist/#botnet-c2-ips-suricata",
-            "homepage": "https://abuse.ch/",
-            "license": "cc0-1.0"
-        },
-        "mirrors": [
-            "https://sslbl.abuse.ch/blacklist/sslipblacklist.rules"
-        ],
-        "prefix": "SSLBL"
+    "metadata": {
+      "description": "https://www.snort.org/downloads/#rule-downloads",
+      "homepage": "https://www.snort.org",
+      "license": "all-rights-reserved"
     },
-    "sslbl_ja3_fingerprints": {
-        "archive": false,
-        "checksums": {},
-        "content": {
-            "filter": "NONE",
-            "retriever": "ARIA2",
-            "type": "TEXT"
-        },
-        "platforms": [
-            "SURICATA"
-        ],
-        "metadata": {
-            "description": "https://sslbl.abuse.ch/blacklist/#ja3-fingerprints-suricata",
-            "homepage": "https://abuse.ch/",
-            "license": "cc0-1.0"
-        },
-        "mirrors": [
-            "https://sslbl.abuse.ch/blacklist/ja3_fingerprints.rules"
-        ],
-        "prefix": "SSLBL"
+    "mirrors": [
+      "https://www.snort.org/downloads/community/community-rules.tar.gz"
+    ],
+    "platforms": [
+      "SNORT2"
+    ],
+    "prefix": "SNORT-CR"
+  },
+  "snort3_community_rules": {
+    "archive": false,
+    "checksums": {
+      "md5": "https://www.snort.org/downloads/community/md5s"
     },
-    "urlhaus_snort_ids": {
-        "archive": false,
-        "checksums": {},
-        "content": {
-            "filter": "GZIP",
-            "retriever": "ARIA2",
-            "type": "TARBALL"
-        },
-        "platforms": [
-            "SNORT2",
-            "SNORT3"
-        ],
-        "metadata": {
-            "description": "https://urlhaus.abuse.ch/api/#ids",
-            "homepage": "https://abuse.ch/",
-            "license": "cc0-1.0"
-        },
-        "mirrors": [
-            "https://urlhaus.abuse.ch/downloads/urlhaus.tar.gz"
-        ],
-        "prefix": "URLHAUS"
+    "content": {
+      "filter": "GZIP",
+      "retriever": "ARIA2",
+      "type": "TARBALL"
     },
-    "urlhaus_suricata_ids": {
-        "archive": false,
-        "checksums": {},
-        "content": {
-            "filter": "GZIP",
-            "retriever": "ARIA2",
-            "type": "TARBALL"
-        },
-        "platforms": [
-            "SURICATA"
-        ],
-        "metadata": {
-            "description": "https://urlhaus.abuse.ch/api/#ids",
-            "homepage": "https://abuse.ch/",
-            "license": "cc0-1.0"
-        },
-        "mirrors": [
-            "https://urlhaus.abuse.ch/downloads/urlhaus_suricata.tar.gz"
-        ],
-        "prefix": "URLHAUS"
+    "metadata": {
+      "description": "https://www.snort.org/downloads/#rule-downloads",
+      "homepage": "https://www.snort.org",
+      "license": "all-rights-reserved"
     },
-    "threatfox": {
-        "archive": false,
-        "checksums": {},
-        "content": {
-            "filter": "GZIP",
-            "retriever": "ARIA2",
-            "type": "TARBALL"
-        },
-        "platforms": [
-            "SURICATA"
-        ],
-        "metadata": {
-            "description": "https://threatfox.abuse.ch/export/#suricata",
-            "homepage": "https://abuse.ch/",
-            "license": "cc0-1.0"
-        },
-        "mirrors": [
-            "https://threatfox.abuse.ch/downloads/threatfox_suricata.tar.gz"
-        ],
-        "prefix": "THREATFOX"
-    }
+    "mirrors": [
+      "https://www.snort.org/downloads/community/snort3-community-rules.tar.gz"
+    ],
+    "platforms": [
+      "SNORT3"
+    ],
+    "prefix": "SNORT-CR"
+  },
+  "sslbl_botnet": {
+    "archive": false,
+    "checksums": {},
+    "content": {
+      "filter": "NONE",
+      "retriever": "ARIA2",
+      "type": "TEXT"
+    },
+    "metadata": {
+      "description": "https://sslbl.abuse.ch/blacklist/#botnet-c2-ips-suricata",
+      "homepage": "https://abuse.ch/",
+      "license": "cc0-1.0"
+    },
+    "mirrors": [
+      "https://sslbl.abuse.ch/blacklist/sslipblacklist.rules"
+    ],
+    "platforms": [
+      "SNORT2",
+      "SNORT3",
+      "SURICATA"
+    ],
+    "prefix": "SSLBL"
+  },
+  "sslbl_ja3_fingerprints": {
+    "archive": false,
+    "checksums": {},
+    "content": {
+      "filter": "NONE",
+      "retriever": "ARIA2",
+      "type": "TEXT"
+    },
+    "metadata": {
+      "description": "https://sslbl.abuse.ch/blacklist/#ja3-fingerprints-suricata",
+      "homepage": "https://abuse.ch/",
+      "license": "cc0-1.0"
+    },
+    "mirrors": [
+      "https://sslbl.abuse.ch/blacklist/ja3_fingerprints.rules"
+    ],
+    "platforms": [
+      "SURICATA"
+    ],
+    "prefix": "SSLBL"
+  },
+  "sslbl_tls_cert": {
+    "archive": false,
+    "checksums": {},
+    "content": {
+      "filter": "NONE",
+      "retriever": "ARIA2",
+      "type": "TEXT"
+    },
+    "metadata": {
+      "description": "https://sslbl.abuse.ch/blacklist/#ssl-certificates-suricata",
+      "homepage": "https://abuse.ch/",
+      "license": "cc0-1.0"
+    },
+    "mirrors": [
+      "https://sslbl.abuse.ch/blacklist/sslblacklist_tls_cert.rules"
+    ],
+    "platforms": [
+      "SURICATA"
+    ],
+    "prefix": "SSLBL"
+  },
+  "threatfox": {
+    "archive": false,
+    "checksums": {},
+    "content": {
+      "filter": "GZIP",
+      "retriever": "ARIA2",
+      "type": "TARBALL"
+    },
+    "metadata": {
+      "description": "https://threatfox.abuse.ch/export/#suricata",
+      "homepage": "https://abuse.ch/",
+      "license": "cc0-1.0"
+    },
+    "mirrors": [
+      "https://threatfox.abuse.ch/downloads/threatfox_suricata.tar.gz"
+    ],
+    "platforms": [
+      "SURICATA"
+    ],
+    "prefix": "THREATFOX"
+  },
+  "urlhaus_snort_ids": {
+    "archive": false,
+    "checksums": {},
+    "content": {
+      "filter": "GZIP",
+      "retriever": "ARIA2",
+      "type": "TARBALL"
+    },
+    "metadata": {
+      "description": "https://urlhaus.abuse.ch/api/#ids",
+      "homepage": "https://abuse.ch/",
+      "license": "cc0-1.0"
+    },
+    "mirrors": [
+      "https://urlhaus.abuse.ch/downloads/urlhaus.tar.gz"
+    ],
+    "platforms": [
+      "SNORT2",
+      "SNORT3"
+    ],
+    "prefix": "URLHAUS"
+  },
+  "urlhaus_suricata_ids": {
+    "archive": false,
+    "checksums": {},
+    "content": {
+      "filter": "GZIP",
+      "retriever": "ARIA2",
+      "type": "TARBALL"
+    },
+    "metadata": {
+      "description": "https://urlhaus.abuse.ch/api/#ids",
+      "homepage": "https://abuse.ch/",
+      "license": "cc0-1.0"
+    },
+    "mirrors": [
+      "https://urlhaus.abuse.ch/downloads/urlhaus_suricata.tar.gz"
+    ],
+    "platforms": [
+      "SURICATA"
+    ],
+    "prefix": "URLHAUS"
+  }
 }
