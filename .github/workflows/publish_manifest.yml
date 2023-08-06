@@ -46,7 +46,7 @@ jobs:
       - name: Document manifest
         run: jq -r '["Source", "Description", "Homepage", "License"], (to_entries[] | .key as $key | .value.metadata | [$key, .description, .homepage, .license]) | @csv' data/v1/manifest.json | csvlook >SOURCES.md
       - name: Make commit directory safe
-        run: git config --global --add safe.directory /__w/black-mirror/black-mirror
+        run: git config --global --add safe.directory /__w/black-truffles/black-truffles
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
