@@ -4,9 +4,9 @@ Created to source various rulesets and organize them by a proper interface.
 The primary issue with other major lists is that many interface relationships and
 their inverse relationships are included and activated in the same lists.
 This leads to active but unused rules on the same interface, which is just unnecessary overhead.
-This project groups rules with similar relationships, aims be a better EmergingThreats, and can hopefully cultivate the same level of success
+This project groups rules with similar relationships, aims be a better EmergingThreats, and can gain the same success
 with contributors who value keeping information freely available to the public.
-Security through obscurity is mostly obsolete, and security cultivated to keep people in power invalidates those who put them there.
+Security through obscurity is mostly obsolete, and security cultivated to only help industry leaders invalidates other economy participants.
 
 ## Snort 2 References
 
