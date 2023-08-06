@@ -9,7 +9,7 @@ on:
 permissions: read-all
 
 jobs:
-  build_lists:
+  publish_lists:
     # https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners
     # https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions#per-minute-rates
     runs-on: ubuntu-latest
@@ -17,6 +17,9 @@ jobs:
     defaults:
       run:
         shell: bash
+
+    permissions:
+      contents: write
 
     container:
       image: ghcr.io/t145/black-mirror:latest
