@@ -8,6 +8,26 @@ This project groups rules with similar relationships, aims be a better EmergingT
 with contributors who value keeping information freely available to the public.
 Security through obscurity is mostly obsolete, and security cultivated to only help industry leaders invalidates other economy participants.
 
+## Snort
+
+- https://www.snort.org/downloads/#rule-downloads
+
+## Emerging Threats
+
+- https://rules.emergingthreats.net/OPEN_download_instructions.html
+
+## Abuse.ch
+
+- https://feodotracker.abuse.ch/blocklist/#ip-ids
+- https://sslbl.abuse.ch/blacklist/#ssl-certificates-suricata
+- https://sslbl.abuse.ch/blacklist/#botnet-c2-ips-suricata
+- https://sslbl.abuse.ch/blacklist/#ja3-fingerprints-suricata
+- https://urlhaus.abuse.ch/api/#ids
+- https://threatfox.abuse.ch/export/#suricata
+- And some Yara for those interested:
+  - https://yaraify.abuse.ch/api/#download-yara-package
+  - https://bazaar.abuse.ch/export/#yara-stats
+
 ## Snort 2 References
 
 - https://github.com/maj0rmil4d/snort-ddos-mitigation
