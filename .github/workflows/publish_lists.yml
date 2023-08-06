@@ -1,0 +1,48 @@
+---
+name: Publish Lists
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions: read-all
+
+jobs:
+  build_lists:
+    # https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners
+    # https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions#per-minute-rates
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+
+    container:
+      image: ghcr.io/t145/black-mirror:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ github.token }}
+      options: --user root
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Generate lists
+        id: build
+        run: |
+          chmod -R 755 ./scripts/*
+          ./scripts/v1/update_lists.bash
+      - name: Dump output context
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+        run: echo "$STEPS_CONTEXT"
+      - name: Make the working tree safe
+        if: steps.build.outputs.status == 'success'
+        run: git config --global --add safe.directory /__w/black-mirror/black-mirror
+      - name: Update lists
+        if: steps.build.outputs.status == 'success'
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          # Homage to the Python linting utility "Black"
+          commit_message: "ci(build): ✨🍰✨"
