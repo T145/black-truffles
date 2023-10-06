@@ -45,7 +45,7 @@ jobs:
         run: git config --global --add safe.directory /__w/black-truffles/black-truffles
       - name: Update lists
         if: steps.build.outputs.status == 'success'
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           # Homage to the Python linting utility "Black"
           commit_message: "ci(build): ✨🍰✨"
