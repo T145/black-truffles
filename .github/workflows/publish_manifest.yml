@@ -48,6 +48,6 @@ jobs:
       - name: Make commit directory safe
         run: git config --global --add safe.directory /__w/black-truffles/black-truffles
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: "ci(lists): ✨📚✨"
